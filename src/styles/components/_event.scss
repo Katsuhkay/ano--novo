@@ -1,0 +1,63 @@
+.event {
+  padding: 80px 0;
+  
+  &--intro {
+    background-image: linear-gradient(#ccc, #D4AF37);
+  }
+
+  &--dourado {
+    background-image: linear-gradient(#D4AF37, #bd0003);
+  }
+
+  &--vermelho {
+    background-image: linear-gradient(#bd0003, #1465bb);
+  }
+
+  &--azul {
+    background-image: linear-gradient(#1465bb, #ccc);
+  }
+
+  &--image-left {
+    .container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__image {
+    max-width: 360px;
+  }
+
+  &__details {
+
+    &__title {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &__description {
+      line-height: 22px;
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    .container {
+      display: block;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__details {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+}
